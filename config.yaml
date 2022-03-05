@@ -1,0 +1,27 @@
+# 服务器地址设置
+host: '127.0.0.1'
+port: 8080
+
+# 数据库
+db:
+  host: '127.0.0.1'
+  port: 5432
+  database: 'chino'
+  user: 'postgres'
+  password: '114514'
+
+# Bot别名
+nicknames: ['chino', 'Chino', '智乃']
+
+# 超级用户
+super_users: [123456789]
+
+# 默认权限
+default_permission: 5
+
+# 命令前缀
+no_prefix: true
+command_prefix: ['/', '!!', '！！']
+
+# 调试模式
+debug: true
