@@ -17,8 +17,6 @@ class Database:
     def get_curse(self):
         return self.conn.cursor()
 
-
-if __name__ == '__main__':
-    cur = Database().conn.cursor()
-    cur.execute('SELECT version()')
-    print(cur.fetchone())
+    def close_db(self):
+        self.conn.commit()
+        self.conn.close()
