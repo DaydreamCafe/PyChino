@@ -15,6 +15,9 @@ with open('./config.yaml', 'r', encoding='utf-8') as f:
 HOST = config['host']
 PORT = config['port']
 
+# 全局代理
+GLOBAL_PROXY = config['proxy']
+
 # 别名
 NICKNAME = config['nicknames']
 

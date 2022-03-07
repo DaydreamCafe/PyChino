@@ -8,6 +8,8 @@ def init_permission_db():
              UID   INT NOT NULL,
              LEVEL INT NOT NULL
              );"""
-    cur = Database().get_curse()
+    db = Database()
+    cur = db.get_curse()
     cur.execute(sql)
     cur.close()
+    db.close_db()

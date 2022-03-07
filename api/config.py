@@ -10,8 +10,8 @@ class PluginConfig:
             os.mkdir('./config')
         if not os.path.exists(f'./config/{plugin_name}'):
             os.mkdir(f'./config/{plugin_name}')
-        with open(f'./config/{plugin_name}/config.yaml', 'w', encoding='utf-8') as f:
-            f.write(default_config.read())
+            with open(f'./config/{plugin_name}/config.yaml', 'w', encoding='utf-8') as f:
+                f.write(default_config.read())
         with open(f'./config/{plugin_name}/config.yaml', 'r', encoding='utf-8') as f:
             self.__config = yaml.load(f, Loader=yaml.FullLoader)
 
