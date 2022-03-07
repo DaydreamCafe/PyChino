@@ -54,21 +54,21 @@ async def get_stats(game_id: str, proxy: str = ''):
         multi_headshots_rate = str(int(
             original_stats['genericStats']['general']['headshots'] /
             original_stats['genericStats']['general']['kills'] * 10000) / 100) + '%'
-    except:
+    except ZeroDivisionError:
         multi_headshots_rate = '00.00%'
 
     try:
         rank_kd = str(int(
             original_stats['seasonalStats']['kills'] /
             original_stats['seasonalStats']['deaths'] * 100) / 100)
-    except:
+    except ZeroDivisionError:
         rank_kd = 0
 
     try:
         rank_win_rate = str(int(original_stats['seasonalStats']['wins'] /
                                 (original_stats['seasonalStats']['wins'] + original_stats['seasonalStats']['losses'])
                                 * 10000) / 100) + '%'
-    except:
+    except ZeroDivisionError:
         rank_win_rate = '00.00%'
 
     stats = {
