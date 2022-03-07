@@ -30,7 +30,7 @@ class StatsR6DB:
         cur.execute(init_table_sql)
         cur.close()
         db.close_db()
-        
+
     def link_account(self, uid: int, account: str):
         db = self.db()
         cur = db.get_curse()
