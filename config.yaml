@@ -16,6 +16,9 @@ nicknames: ['chino', 'Chino', '智乃']
 # 超级用户
 super_users: [123456789]
 
+# 全局代理设置
+proxy: ''
+
 # 默认权限
 default_permission: 5
 
