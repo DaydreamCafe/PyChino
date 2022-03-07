@@ -127,20 +127,3 @@ class StatsRenderer:
         img_data = BytesIO()
         image.save(img_data, format='PNG')
         return img_data
-
-
-if __name__ == '__main__':
-    renderer = StatsRenderer({'username': 'll.', 'uuid': '4b05eca7-2c52-429b-b3ae-b41d8da7fcc8',
-                              'avatar_url': 'https://ubisoft-avatars.akamaized.net/4b05eca7-2c52-429b-b3ae-b41d8da7fce5/default_256_256.png',
-                              'last_updated': '2022-03-05T06:28:40.552Z', 'level': 175,
-                              'general': {'kd': '1.06', 'win_rate': '51.96%', 'kills_per_game': '3.1', 'kills': 7973,
-                                          'wins': 1296, 'games_played': 2494, 'deaths': 7514, 'losses': 1196,
-                                          'playtime': '562.7h', 'dbnos': 3261, 'rank_kd': '1.0', 'casual_kd': '1.06'},
-                              'multi': {'kills': 7973, 'blind_kills': 13, 'melee_kills': 246, 'penetration_kills': 360,
-                                        'headshots': 2958, 'headshots_rate': '37.1%', 'assists': 2142, 'revives': 287,
-                                        'suicides': 33, 'barricades_deployed': 894, 'reinforcements_deployed': 6141,
-                                        'rappel_breaches': 0},
-                              'rank': {'MMR': 3219, 'max_MMR': 3219, 'wins': 25, 'losses': 86, 'kills': 196,
-                                       'deaths': 163, 'kd': '1.2', 'win_rate': '60.97%', 'region': 'NSA',
-                                       'rank': {'name': '白金 III', 'id': 'Platinum_03'}}})
-    renderer.render()
