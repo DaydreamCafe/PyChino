@@ -1,0 +1,8 @@
+# 最低权限等级
+level: 5
+
+# 自动撤回时间（-1为不自动撤回）
+withdraw_time: 30
+
+# 是否限制为仅超级用户可用
+limit_superuser: false
