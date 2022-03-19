@@ -23,7 +23,6 @@ class TraceMeo:
     async def get_result_formatted(self, proxy: str = '') -> str:
         try:
             result = await self.get_result(proxy)
-            print(result)
             max_results = len(result['result']) if len(result['result']) < 5 else 5
             ret = '智乃酱为您找到了以下结果：\n'
             for anime in result['result'][:max_results]:
